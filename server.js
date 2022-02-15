@@ -47,7 +47,7 @@ app.get('/covid/:country/:period', (req,res) => {
 
         // Sends a message if there is no records for a Country in the specified Period
         if (result.length == 0) {
-            res.write(`<h1>No records for that period</h1>`);
+            res.write(`<h1>No records for the period: ${month}/${year}</h1>`);
             return;
         }
 
